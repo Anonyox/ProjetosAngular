@@ -1,0 +1,560 @@
+<div class="autoResponsive">
+
+    <header>
+
+        <div class="titulo" align="left">
+
+            <table>
+
+                <tr>
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                        <button (click)="toogleTag()" class=" btnVerde
+            ">Aritmética</button>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+                        <div>
+
+                            <button (click)="toogleTagArea()" onmouseover="aumentarBotao()"
+                                class="btnVerde efeito-1">Área</button>
+
+                        </div>
+
+
+
+
+
+
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+                        <div>
+
+                            <button (click)="toogleTagReajuste()" class="btnVerde efeito-1">Reajuste</button>
+
+                        </div>
+
+
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+                        <div>
+
+                            <button (click)="toogleTagIndice()" class="btnVerde efeito-1">Índice</button>
+
+                        </div>
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                        <div>
+
+                            <button (click)="toogleTagVogal()" class="btnVerde efeito-1">Vogal</button>
+
+                        </div>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                        <div>
+
+                            <button (click)="toogleTagInverter()" class="btnVerde efeito-1">Inverter</button>
+
+                        </div>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                        <div>
+
+                            <button (click)="toogleTagFatorial()" class="btnVerde efeito-1">Fatorar</button>
+
+                        </div>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                    <td>
+
+                    </td>
+
+                </tr>
+
+
+
+            </table>
+
+        </div>
+
+    </header>
+
+    <section class="result" align="center">
+
+
+        <div *ngIf="showMeAritimetica">
+
+
+
+
+
+            <div>
+
+
+
+
+                <br><br>
+
+
+
+            </div>
+
+            <div class="wrapper">
+
+                <label class="lblAritmetica">Aritmética</label>
+                <br><br>
+                <div class="input-data">
+                    <label>Primeiro Valor :</label>
+                </div>
+
+
+
+                <div class="input-data">
+                    <input type="number" required [(ngModel)]="n1">
+
+                </div>
+
+
+                <br><br>
+                <div class="input-data">
+                    <label>Segundo Valor :</label>
+                </div>
+
+                <div class="input-data">
+
+                    <input type="number" [(ngModel)]="n2">
+                </div>
+
+                <br><br>
+                <div class="input-data">
+                    <label>Terceiro Valor :</label>
+                </div>
+
+                <div class="input-data">
+
+                    <input type="number" [(ngModel)]="n3">
+                </div>
+            </div>
+
+            <br><br>
+
+
+
+            <div>
+                <button type="button" class="btnCalcMedia" (click)="calculoMedia()">Calcular</button>
+                <br><br>
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+        <div *ngIf="showMeArea">
+            <br><br>
+            <br><br>
+            <div class="wrapper">
+
+
+
+                <label class="lblAritmetica">Área</label>
+                <br><br>
+
+                <div class="input-data">
+                    <label>Base :</label>
+                </div>
+
+
+                <div class="input-data">
+
+                    <input type="number" [(ngModel)]="n1">
+                </div>
+
+
+                <br><br>
+                <div class="input-data">
+                    <label>Altura :</label>
+                </div>
+
+
+                <div class="input-data">
+                    <input type="number" class="input-data" [(ngModel)]="n2">
+
+
+
+                </div>
+
+            </div>
+
+            <br><br>
+
+
+
+
+            <br><br>
+
+
+
+            <div>
+                <button type="button" class="btnCalcMedia" (click)="calculoArea()">Calcular</button>
+                <br><br>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <div *ngIf="showMeReajuste">
+
+            <br><br>
+            <br><br>
+            <div class="wrapper">
+
+
+
+                <label class="lblAritmetica">Reajuste</label>
+                <br><br>
+
+                <div class="input-data">
+                    <label>Salário :</label>
+                </div>
+
+
+                <div class="input-data">
+
+                    <input type="number" [(ngModel)]="n1">
+                </div>
+
+
+                <br><br>
+                <div class="input-data">
+                    <label>Porcentagem de Reajuste :</label>
+                </div>
+
+
+                <div class="input-data">
+                    <input type="number" class="input-data" [(ngModel)]="n2">
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <br><br>
+            <br><br>
+            <div>
+                <button type="button" class="btnCalcMedia" (click)="calculaReajuste()">Calcular</button>
+                <br><br>
+
+
+
+            </div>
+        </div>
+
+        <div *ngIf="showMeIndice">
+
+            <br><br>
+            <br><br>
+            <div class="wrapper">
+
+
+
+                <label class="lblAritmetica">Vetor</label>
+                <br><br>
+                <label class="lblAritmetica">meuArray : {{ meuArray }}</label>
+                <br><br>
+
+
+
+
+
+
+
+                <br><br>
+
+
+
+
+
+            </div>
+
+            <br><br>
+
+
+
+
+            <br><br>
+
+
+
+            <div>
+
+                <button type="button" class="btnCalcMedia" (click)="acharIndice()">Calcular</button>
+                <br><br>
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <div *ngIf="showMeVogal">
+
+            <br><br>
+            <br><br>
+            <div class="wrapper">
+
+
+
+                <label class="lblAritmetica">Vogais</label>
+                <br><br>
+
+                <div class="input-data">
+                    <label>Texto :</label>
+                </div>
+
+
+                <div class="input-data">
+
+                    <input type="string" [(ngModel)]="palavra">
+                </div>
+
+
+                <br><br>
+
+
+
+
+
+            </div>
+
+            <br><br>
+
+
+
+
+            <br><br>
+
+
+
+            <div>
+                <button type="button" class="btnCalcMedia" (click)="acharVogal()">Calcular</button>
+                <br><br>
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <div *ngIf="showMeInverter">
+
+            <br><br>
+            <br><br>
+            <div class="wrapper">
+
+
+
+                <label class="lblAritmetica">Inversor</label>
+                <br><br>
+
+                <div class="input-data">
+                    <label>Texto :</label>
+                </div>
+
+
+                <div class="input-data">
+
+                    <input type="string" [(ngModel)]="palavra">
+                </div>
+
+
+                <br><br>
+
+
+
+
+
+            </div>
+
+            <br><br>
+
+
+
+
+            <br><br>
+
+
+
+            <div>
+                <button type="button" class="btnCalcMedia" (click)="inverterPalavra()">Calcular</button>
+                <br><br>
+
+
+
+            </div>
+
+        </div>
+
+        <div *ngIf="showMeFatorial">
+
+            <br><br>
+            <br><br>
+            <div class="wrapper">
+
+
+
+                <label class="lblAritmetica">Fatorar</label>
+                <br><br>
+
+                <div class="input-data">
+                    <label>Número :</label>
+                </div>
+
+
+                <div class="input-data">
+
+                    <input type="number" [(ngModel)]="n1">
+                </div>
+
+
+                <br><br>
+
+
+
+
+
+            </div>
+
+            <br><br>
+
+
+
+
+            <br><br>
+
+
+
+            <div>
+                <button type="button" class="btnCalcMedia" (click)="fatorar()">Calcular</button>
+                <br><br>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+</div>

@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  background-image: repeating-radial-gradient();
+  display: flex;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 450px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 45px;
+  border-radius: 15px;
+}
+
+label {
+  color: rgb(161, 153, 153);
+}
+
+.wrapper .input-data {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .input-data input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid silver;
+}
+
+.input-data input:focus~label, .input-data input:valid~label {
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: black;
+}
+
+.wrapper .input-data label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: black;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+table {
+  align-items: center;
+  margin: 1px;
+  margin: auto;
+  opacity: 0.8;
+  border: none;
+  display: center;
+}
+
+img.logo {
+  margin-left: -280px;
+}
